@@ -1,0 +1,47 @@
+#
+# WjCryptLib 算法库简介:
+#
+WjCryptLib 是一个纯c 的对称加密算法库/hash 校验数算法库, 
+如果你搞嵌入式, 可以用用, 省得自己实现, 调试半天;
+(自己写容易, 调试半天是很常见的, 容易踩坑)
+
+
+
+
+
+#
+# WjCryptLib 目录说明:
+#
+./build:
+	cmake 编译目录
+
+./lib:
+	WjCryptLib 核心源码库
+
+./projects/*:
+	二进制工具, 类似脚本(stdin输入数据, stdout输出结果):
+	(也是一个c/c++ 使用demo 目录)
+		aesBlock
+		aesCtrOutput
+		aesOfbOutput
+		md5String
+		rc4Output
+		sha1String
+		sha256String
+		sha512String
+
+
+	./projects/test:
+	WjCryptLib库自检程序
+
+
+	adan shaw新增:
+		auto_build.sh
+		auto_check.sh
+		auto_clean.sh
+		auto_test.sh
+		CMakeLists.txt (做了一些编译调整)
+		demo
+		tarball_WjCryptLib.sh
+		untarball_WjCryptLib.sh
+		WjCryptLib简介&目录说明
